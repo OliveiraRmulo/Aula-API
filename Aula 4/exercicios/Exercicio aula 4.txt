@@ -1,0 +1,28 @@
+Crie um novo projeto Spring Boot.
+
+Crie uma classe chamada Funcionario com as seguintes propriedades:
+
+id
+nome
+cpf
+salario
+LocalDate dataAdmissao
+
+Implemente um CRUD completo para gerenciar os funcionários. As URLs da sua API devem ser:
+
+GET localhost:8080/funcionarios
+GET localhost:8080/funcionarios/{id}
+POST localhost:8080/funcionarios
+PUT localhost:8080/funcionarios/{id}
+DELETE localhost:8080/funcionarios/{id}
+
+As seguintes regras de validação devem ser aplicadas:
+
+Nome: não pode ser nulo/vazio e deve ter no máximo 100 caracteres.
+CPF: deve ser valido
+Salário: não pode ser nulo e deve ser um valor positivo.
+Data de Admissão: deve ser uma data no passado ou no presente.
+
+Personalize as mensagens de erro da sua API. Sua API deve retornar um erro claro e padronizado
+
+Teste todos os cenários (sucesso e erro) usando o Postman.
